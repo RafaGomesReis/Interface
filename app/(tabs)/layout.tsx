@@ -15,6 +15,19 @@ export default function TabsLayout() {
                         />
                 }}
             />
+            <Tabs.Screen
+                name="about"
+                options={{
+                    title: 'Sobre',
+                    tabBarIcon: ({color}) => (
+                        <FontAwesome   
+                            name="user"
+                            size={28}
+                            color={color}
+                        />
+                    )
+                }}
+            />
         </Tabs>
     )
 }
@@ -32,17 +45,5 @@ export default function TabsLayout() {
                     )
                 }}
             />
-            <Tabs.Screen
-                name="about"
-                options={{
-                    title: 'Sobre',
-                    tabBarIcon: ({color}) => (
-                        <FontAwesome   
-                            name="user"
-                            size={28}
-                            color={color}
-                        />
-                    )
-                }}
-            />
+            
 */

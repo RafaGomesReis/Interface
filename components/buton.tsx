@@ -3,12 +3,13 @@ import { Pressable, View, Text, StyleSheet } from "react-native";
 type Props = {
     title: string;
     onPress: () => void;
+    style?: any;
 }
 
 
-export const Button = ({ title, onPress }: Props) =>{
+export const Button = ({ title, onPress, style }: Props) =>{
     return (
-        <Pressable onPress={onPress} style={styles.button}>
+        <Pressable onPress={onPress} style={[styles.button, style]}>
             <Text style={styles.buttonText}>{title}</Text>
         </Pressable>
     )

@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~53.0.9",
+    "expo": "~53.0.0",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
     "react-native": "0.79.2",
@@ -20,9 +20,21 @@
     "expo-constants": "~17.1.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
+    "@babel/core": "^7.20.0",
     "@types/react": "~19.0.10",
-    "typescript": "~5.8.3"
+    "typescript": "^5.3.0",
+    "metro": "^0.82.0",
+    "metro-react-native-babel-preset": "0.77.0",
+    "@expo/metro-config": "~0.20.0"
   },
-  "private": true
+  "private": true,
+  "overrides": {
+    "semver": "^7.5.2",
+    "ip": "^2.0.0",
+    "send": "^0.19.0",
+    "cookie": "^0.7.0",
+    "@react-native-community/cli": "^13.5.3",
+    "@react-native-community/cli-doctor": "^13.5.3",
+    "@react-native-community/cli-hermes": "^13.5.3"
+  }
 }

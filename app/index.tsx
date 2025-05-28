@@ -7,6 +7,9 @@ export default function Screen() {
     const HandleStart = () => {
         router.replace('/home')    
     }
+    const HandleAbout = () => {
+        router.replace('/about')    
+    }
     
     return (
         <SafeAreaView style={styles.container}>
@@ -20,6 +23,11 @@ export default function Screen() {
             <Button
                 title="Entrar"
                 onPress={HandleStart}
+            />
+            <Button
+                style={styles.button}
+                title="Sobre"
+                onPress={HandleAbout}
             />
         </SafeAreaView>
     );
@@ -46,5 +54,8 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#666',
     },
+    button: {
+        marginTop: 5,
+    }
     
 });
