@@ -1,7 +1,7 @@
 Stack:
 - index
 - (tabs)
-    -início
+    -Home
     -Stack categorias
         - listagem de categorias
         - listagem de produtos de uma categoria
