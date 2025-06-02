@@ -20,15 +20,18 @@ export default function Screen() {
             />
             <Text style={styles.title}>Interface de Loja do Maioral</Text>
             <Text style={styles.subtitle}>Aqui tem de tudo e mais um pouco</Text>
-            <Button
+            <View style={styles.buttonContainer}>
+                <Button
+                style={styles.button}
                 title="Entrar"
                 onPress={HandleStart}
-            />
-            <Button
+                />
+                <Button
                 style={styles.button}
                 title="Sobre"
                 onPress={HandleAbout}
-            />
+                />
+            </View>
         </SafeAreaView>
     );
 }
@@ -53,9 +56,16 @@ const styles = StyleSheet.create({
     subtitle: {
         fontSize: 16,
         color: '#666',
+        marginBottom: 10,
     },
     button: {
         marginTop: 5,
+        width: 150,
+    },
+    buttonContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
     }
+
     
 });
