@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from "react-native";
-import { getProducts } from "../../services/product";
-import { ProductItem } from "../../components/products-item";
 import { router } from "expo-router";
+import { getCategories } from "../../../services/category";
+import { CategoryItem } from "../../../components/category-item";
 
 export default function Screen() {
-    const products = getProducts();
+    const categories = getCategories();
 
     const HandleBack = () => {
         router.replace('/');
@@ -12,8 +12,8 @@ export default function Screen() {
     return (
         <View style={styles.container}>
             <FlatList
-                data={products}
-                renderItem={({item}) => <ProductItem data={item} />}
+                data={categories}
+                renderItem={({item}) => <CategoryItem data={item} />}
                 keyExtractor={item => item.id.toString()}
                 style={styles.list}
             />

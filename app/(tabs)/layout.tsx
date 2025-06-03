@@ -13,6 +13,19 @@ export default function TabsLayout() {
                             size={28}
                             color={color}
                         />
+                }} 
+            />
+            <Tabs.Screen
+                name="categories"
+                options={{
+                    title: 'Categorias',
+                    tabBarIcon: ({color}) => (
+                        <FontAwesome   
+                            name="archive"
+                            size={28}
+                            color={color}
+                        />
+                    )
                 }}
             />
             <Tabs.Screen
@@ -32,18 +45,5 @@ export default function TabsLayout() {
     )
 }
 /*
-            <Tabs.Screen
-                name="categories"
-                options={{
-                    title: 'Categorias',
-                    tabBarIcon: ({color}) => (
-                        <FontAwesome   
-                            name="archive"
-                            size={28}
-                            color={color}
-                        />
-                    )
-                }}
-            />
-            
+  
 */

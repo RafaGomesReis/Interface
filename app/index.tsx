@@ -10,7 +10,9 @@ export default function Screen() {
     const HandleAbout = () => {
         router.replace('/about')    
     }
-    
+    const HandleCategories = () => {
+        router.replace('/categories/list')    
+    }
     return (
         <SafeAreaView style={styles.container}>
             <Image
@@ -18,7 +20,7 @@ export default function Screen() {
                 style={styles.logo}
                 resizeMode="cover"
             />
-            <Text style={styles.title}>Interface de Loja do Maioral</Text>
+            <Text style={styles.title}>Interface da Loja do Maioral</Text>
             <Text style={styles.subtitle}>Aqui tem de tudo e mais um pouco</Text>
             <View style={styles.buttonContainer}>
                 <Button
@@ -30,6 +32,11 @@ export default function Screen() {
                 style={styles.button}
                 title="Sobre"
                 onPress={HandleAbout}
+                />
+                                <Button
+                style={styles.button}
+                title="Categorias"
+                onPress={HandleCategories}
                 />
             </View>
         </SafeAreaView>
@@ -60,7 +67,8 @@ const styles = StyleSheet.create({
     },
     button: {
         marginTop: 5,
-        width: 150,
+        width: 120,
+        marginHorizontal: 5,
     },
     buttonContainer: {
         flexDirection: 'row',
